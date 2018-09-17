@@ -61,3 +61,11 @@
   In the third case user Vitalie can create new DBs and can restrict the acces to them :
   
   ![](images/Capture6.PNG)
+  
+  ## Conclusions : 
+  
+  1. In this laboratory work I've learnt the basic workflow with Microsoft SQL Server 2017 and its tools. Also its installation and Configuration.
+  
+  2. For a better management of the data in the databases are used roles to differentiate the users.
+  
+  3. It is a good practice to restrict the actions as much as possible to prevent spontanious and undesired events.
