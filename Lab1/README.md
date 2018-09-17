@@ -43,3 +43,5 @@
 2. Register the server with SQL Auth :
 
   ![](images/Capture2.PNG)
+  
+3. Create 3 users using SQL Auth and with the given restrictions. In the following figures I've shown the special characteristics of each user, but first I've added the AdventureWorks databases : 
