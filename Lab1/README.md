@@ -37,4 +37,9 @@
 
 ### Practical Assignments :
 1. Install SQL Server 2017 : 
+
+  ![](images/Capture1.PNG)
   
+2. Register the server with SQL Auth :
+
+  ![](images/Capture2.PNG)
