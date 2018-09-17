@@ -45,3 +45,13 @@
   ![](images/Capture2.PNG)
   
 3. Create 3 users using SQL Auth and with the given restrictions. In the following figures I've shown the special characteristics of each user, but first I've added the AdventureWorks databases : 
+
+  ![](images/Capture3.PNG)
+  
+  And here are the figures of the users : 
+  
+  ![](images/Capture4.PNG)
+  
+  ![](images/Capture5.PNG)
+  
+  ![](images/Capture6.PNG)
