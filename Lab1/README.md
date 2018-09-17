@@ -50,8 +50,14 @@
   
   And here are the figures of the users : 
   
+  In the first case user Vasile can read and write in the table of the schema HumanResources from AdventureWorks2017 DB :
+  
   ![](images/Capture4.PNG)
   
+  In the second case user Ivan can read the table of the schema Sales from AdventureWorks2017 DB and can manage content from AdventureWorksDW2017 DB :
+  
   ![](images/Capture5.PNG)
+  
+  In the third case user Vitalie can create new DBs and can restrict the acces to them :
   
   ![](images/Capture6.PNG)
