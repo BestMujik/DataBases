@@ -18,20 +18,32 @@
 ### Practical Assignments :
 1. In the first assignment I've created the required database with the configuration as in the figure : 
 
- ![](images/Capture21.PNG)
+![](images/Capture21.PNG)
 
 2. For the second database here is the figure for the configuration : 
 
- ![](images/Capture22.PNG)
+![](images/Capture22.PNG)
  
    And here I grant SingleUser usage :
  
- ![](images/Capture23.PNG)
+![](images/Capture23.PNG)
  
-3. 
+3. Figures showing the Maintanance Plan wizard configuration : 
+
+![](images/Capture24.PNG)
+
+![](images/Capture25.PNG)
+
+![](images/Capture26.PNG)
+
+![](images/Capture27.PNG)
+
+This plan was created for the Stuff database, occuring weekly Friday at 00:00. It shrinks the empty space when database grows beyond 2000MB.
+
+4. 
 
 ## Conclusions : 
 
 1. The creation of the database is a more complex proccess in which we should look forward and establish some features which can after influence the performance of our database.
 
-2. 
+2. Maintanance plans are essential for a good perfoming database on long term. It should be created according to its necessities.
