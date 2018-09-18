@@ -40,15 +40,23 @@
 
 This plan was created for the Stuff database, occuring weekly Friday at 00:00. It shrinks the empty space when database grows beyond 2000MB.
 
-4. 
+4. The following figures show the configuration of the maintanance plan of the Name database : 
 
 ![](images/Capture28.PNG)
 
+Rebuild Operation :
+
 ![](images/Capture29.PNG)
+
+Statistics collection :
 
 ![](images/Capture29a.PNG)
 
+Backup-Restor hystory deletion(older than 6 months) : 
+
 ![](images/Capture29b.PNG)
+
+![](images/Capture29c.PNG)
 
 ## Conclusions : 
 
