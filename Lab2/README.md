@@ -42,6 +42,14 @@ This plan was created for the Stuff database, occuring weekly Friday at 00:00. I
 
 4. 
 
+![](images/Capture28.PNG)
+
+![](images/Capture29.PNG)
+
+![](images/Capture29a.PNG)
+
+![](images/Capture29b.PNG)
+
 ## Conclusions : 
 
 1. The creation of the database is a more complex proccess in which we should look forward and establish some features which can after influence the performance of our database.
