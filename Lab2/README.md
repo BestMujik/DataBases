@@ -16,6 +16,16 @@
 5. Maintanance plan is a plan used for good functioning other time of the database. It is used for backup if needed and testing of database performance. It can be created manually or with Maintanance Plan Wizard.
 
 ### Practical Assignments :
-1. 
+1. In the first assignment I've created the required database with the configuration as in the figure : 
+
+ ![](images/Capture21)
+
+2. For the second database here is the figure for the configuration : 
+
+ ![](images/Capture22)
+ 
+   And here I grant SingleUser usage :
+ 
+ ![](images/Capture23)
 
 ## Conclusions : 
