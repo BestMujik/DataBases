@@ -18,14 +18,14 @@
 ### Practical Assignments :
 1. In the first assignment I've created the required database with the configuration as in the figure : 
 
- ![](images/Capture21)
+ ![](images/Capture21.PNG)
 
 2. For the second database here is the figure for the configuration : 
 
- ![](images/Capture22)
+ ![](images/Capture22.PNG)
  
    And here I grant SingleUser usage :
  
- ![](images/Capture23)
+ ![](images/Capture23.PNG)
 
 ## Conclusions : 
