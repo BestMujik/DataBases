@@ -61,9 +61,11 @@
 
 2. **DECIMAL**;
 
-3. 
+3. I've created the tables in the database **Universitate** with the properties as in the figures below :
+ 
+![](images/Capture31.PNG)
 
-![](images/name.PNG)
+![](images/Capture32.PNG)
 
 ## Conclusions : 
 
