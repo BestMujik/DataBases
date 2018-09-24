@@ -67,7 +67,11 @@
 
 ![](images/Capture32.PNG)
 
-4. 
+4. Now, I've inserted the given data into the tables : 
+
+![](images/Capture33.PNG)
+
+![](images/Capture34.PNG)
 
 ## Conclusions : 
 
