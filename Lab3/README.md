@@ -69,4 +69,4 @@
 
 1. The creation of the database is a more complex proccess in which we should look forward and establish some features which can after influence the performance of our database.
 
-2. 
+2. It is a good practice to think in advance what we need to store in a column and what values can it have so that we could pick the optimal data type.
