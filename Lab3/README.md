@@ -57,7 +57,11 @@
 5. Existing info may be afected. Some errors may appear if some constraints are not satisfied. Examples of columns which cannot be modified are : columns with type **TIMESTAMP** or **UNIQUEIDENTIFIER**, associated with **DEFAULT**, **PRIMARY KEY** column etc. 
 
 ### Practical Assignments :
-1. 
+1. a) 16,2 or b) 116,2;
+
+2. DECIMAL;
+
+3. 
 
 ![](images/name.PNG)
 
