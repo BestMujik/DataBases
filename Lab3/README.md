@@ -59,7 +59,7 @@
 ### Practical Assignments :
 1. a) 16,2 or b) 116,2;
 
-2. DECIMAL;
+2. **DECIMAL**;
 
 3. 
 
