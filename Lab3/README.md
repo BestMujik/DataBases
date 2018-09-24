@@ -67,6 +67,8 @@
 
 ![](images/Capture32.PNG)
 
+4. 
+
 ## Conclusions : 
 
 1. The creation of the database is a more complex proccess in which we should look forward and establish some features which can after influence the performance of our database.
