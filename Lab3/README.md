@@ -10,11 +10,51 @@
 
 ## Course of the work :
 ### Quiz :
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Each column in a table should contain obligatory some specifications i.e. name, data type. 
+2. The datatypes used by SQL Server 2017 are :
+  - Integer types(Exact Numbers) : 
+    - **BIGINT** - 8 bytes;
+    - **INT** - 4 bytes;
+    - **SMALLINT** - 2 bytes;
+    - **TINYINT** - 1 byte;
+    - **BIT** - Binary;
+    - **DECIMAL(P[,S]) or NUMERIC(P[,S])** - (P - total number of digits), (S - number of digits after point); 
+    - **MONEY** - 8 bytes;
+    - **SMALLMONEY** - 4 bytes;
+  - Floating-point numbers :
+    - **FLOAT(N)** - 4 or 8 bytes (N - precision; Nmax = 53);
+    - **REAL** - FLOAT(24);
+  - Strings : 
+    - **CHAR(N)** - max 8Kb, fixed length;
+    - **VARCHAR[(N | MAX)]** - max 8Kb, variable length;
+    - **TEXT** - > 8Kb and < 2Gb;
+  - Binary : 
+    - **BINARY(N)** - max 8Kb, fixed length;
+    - **VARBINARY[(N | MAX)]** - max 8Kb, variable length;
+    - **IMAGE** - > 8Kb and < 2Gb(GIF, JPEG, etc.);
+  - Date/Time: 
+    - **DATETIME** - dd/mm/yyyy;
+    - **DATETIME2** - extension of DATETIME;
+    - **DATE** - any valid date;
+    - **TIME** - hh/mm/ss/ms;
+    - **DATETIMEOFFSET**;
+    - **SMALLDATETIME**;
+  - Special :
+    - **CURSOR** - cursor reference;
+    - **HIERARCHYID** - hierarchy positions;
+    - **SQL_VARIANT** - values of different data types;
+    - **TABLE** - a heap of rows;
+    - **TIMESTAMP** - 8Kb;
+    - **UNIQUEIDENTIFIER** - Global Unique ID;
+    - **XML** - stores XML data;
+3. Integrity Constraints : 
+  - **NOT NULL**;
+  - **UNIQUE**;
+  - **PRIMARY KEY**;
+  - **FOREIGN KEY**;
+  - **CHECK**;
+4. Some dependencies between tables may be lost. Also there are columns which cannot be deleted so there can appear errors when trying to delete one. 
+5. Existing info may be afected. Some errors may appear if some constraints are not satisfied. Examples of columns which cannot be modified are : columns with type TIMESTAMP or UNIQUEIDENTIFIER, associated with DEFAULT, PRIMARY KEY column etc. 
 
 ### Practical Assignments :
 1. 
