@@ -54,7 +54,7 @@
   - **FOREIGN KEY**;
   - **CHECK**;
 4. Some dependencies between tables may be lost. Also there are columns which cannot be deleted so there can appear errors when trying to delete one. 
-5. Existing info may be afected. Some errors may appear if some constraints are not satisfied. Examples of columns which cannot be modified are : columns with type TIMESTAMP or UNIQUEIDENTIFIER, associated with DEFAULT, PRIMARY KEY column etc. 
+5. Existing info may be afected. Some errors may appear if some constraints are not satisfied. Examples of columns which cannot be modified are : columns with type **TIMESTAMP** or **UNIQUEIDENTIFIER**, associated with **DEFAULT**, **PRIMARY KEY** column etc. 
 
 ### Practical Assignments :
 1. 
