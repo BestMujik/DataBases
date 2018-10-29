@@ -9,6 +9,28 @@
 ## Course of the work :
 ### Quiz :
 
+1. Some of the facilities that Transact-SQL Query Editor offers us are :
+
+    * Visualization of the data in form of grid or text, using SQL commands;
+    * Analizing the plan of execution of the query;
+    * Online help of Transact-SQL;
+    
+2. Ce reprezinta DDl, DML, DCL si TCL;
+
+3. Ce operatori ofera Transact sql
+
+4. Syntax de baza a lui Select;
+
+5. functii ale transactsql (inclusiv agragare)?
+
+6. query with join. types;
+
+7. interogari corelate
+
+8. cum pot fi redate operatiile intersect si execpt. dintre subinterogari prin interogari imbricate.
+
+9. care sunt tehnicile de limitare a numarului de linii returnate de query
+
 ### Practical Assignments :
 1. figure : 
 
