@@ -25,19 +25,47 @@
     
     * TCL (Transactional Control Language) - Used for the management of the transactions from database;
 
-3. Ce operatori ofera Transact sql
+3. The operators used in Transact-SQL expressions are : 
 
-4. Syntax de baza a lui Select;
+    * Arithmetic operators (+, -, *, /, %);
+    
+    * Char operator (+ i.e. concatenation);
+    
+    * Comparison operators (=, <>, >=, <=, <, >, !=, !>, !<);
+    
+    * Logical operators (AND, OR, ANY, SOME, NOT, LIKE, IN, EXISTS, BETWEEN, ALL);
+    
+    * Bitwise operators (&, |, ~, ^);
+    
+    * LIKE
 
-5. functii ale transactsql (inclusiv agragare)?
+4. Syntax of SELECT instruction : 
 
-6. query with join. types;
+   SELECT [ALL|DISTINCT] <Columns> 
+      FROM <Tables>
+      [WHERE <condition>] [Other clauses]; 
 
-7. interogari corelate
+5. Functions of Transact-SQL :
 
-8. cum pot fi redate operatiile intersect si execpt. dintre subinterogari prin interogari imbricate.
+    * Single row (UPPER, LOWER, SUBSTRING, LEN, REPLACE, CONCAT);
+    
+    * Aggregate (SUM, AVG, MAX, MIN, COUNT);
 
-9. care sunt tehnicile de limitare a numarului de linii returnate de query
+6. Types of join queries : 
+
+    * INNER JOIN;
+    
+    * OUTER JOIN;
+    
+    * LEFT JOIN; 
+    
+    * RIGHT JOIN; 
+
+7. Related queries are queries which appear inside another querry, usually in the WHERE clause; 
+
+8. INTERSECT and EXCEPT are 2 examples of set operations. They corespond with Intersections and Difference operations from set theory;  
+
+9. The TOP clause is used to limit the number of lines returned by a instruction. Also in tandem with ORDER BY to the TOP clause we can use WITH TIES to get all the ties;
 
 ### Practical Assignments :
 1. figure : 
