@@ -4,7 +4,7 @@
 ### Author : *Drumea Vasile*
 -----
 ## Objectives :
-1. Get falmiliar with Transact-SQL and its usage;
+1. Get familiar with Transact-SQL and its usage;
 
 ## Course of the work :
 ### Quiz :
