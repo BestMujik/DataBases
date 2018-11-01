@@ -15,7 +15,15 @@
     * Analizing the plan of execution of the query;
     * Online help of Transact-SQL;
     
-2. Ce reprezinta DDl, DML, DCL si TCL;
+2. SQL instructions are divided in 4 groupes : 
+
+    * DDL (Data Definition Language) - This instructions are used for creation, insertion or modification purposes;
+    
+    * DML (Data Manipulation Language) - These are used for manipulation of the data i.e. inserting, modifying rows of data;
+    
+    * DCL (Data Control Language) - Used for creating roles, permissions also for the administration to the database;
+    
+    * TCL (Transactional Control Language) - Used for the management of the transactions from database;
 
 3. Ce operatori ofera Transact sql
 
