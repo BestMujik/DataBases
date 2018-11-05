@@ -1,6 +1,6 @@
-# Laboratory work nr. 4
+# Laboratory work nr. 5
 -----
-# Topic : *SELECT instruction Transact-SQL*
+# Topic : *Procedural instructions in Transact-SQL*
 ### Author : *Drumea Vasile*
 -----
 ## Objectives :
