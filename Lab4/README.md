@@ -68,10 +68,18 @@
 9. The TOP clause is used to limit the number of lines returned by a instruction. Also in tandem with ORDER BY to the TOP clause we can use WITH TIES to get all the ties;
 
 ### Practical Assignments :
-1. figure : 
+1. 1st Query : 
 
-![](images/.PNG)
+![](images/Capture1.PNG)
+
+2. 21st Query
+
+![](images/Capture2.PNG)
+
+3. 25th Query
+
+![](images/Capture3.PNG)
 
 ## Conclusions : 
 
-1. The creation of the database is a more complex proccess in which we should look forward and establish some features which can after influence the performance of our database.
+   There are numerous ways of selecting data from database. Even if the tables do not provide the neccesary information we can obtain through different combinations aka joins between tables. There are also functions which can be perfomed on data e.g. counting, average etc. 
