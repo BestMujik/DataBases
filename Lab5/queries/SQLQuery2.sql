@@ -1,5 +1,10 @@
-SELECT TOP 10 Nume_Student, Prenume_Student
-FROM dbo.studenti_reusita
-INNER JOIN dbo.studenti ON dbo.studenti_reusita.Id_Student = dbo.studenti.Id_Student
-WHERE dbo.studenti_reusita.Id_Disciplina = 107 AND dbo.studenti_reusita.Tip_Evaluare = 'Testul 1' AND
-      dbo.studenti_reusita.Nota != 6 AND dbo.studenti_reusita.Nota != 8;
+DECLARE @DISC VARCHAR(20); 
+DECLARE @TEST VARCHAR(20);
+SET @DISC = 'Baze de date'
+SET @TEST = 'Testul 1'
+ 
+SELECT TOP 10 Nume_Student, Prenume_Student, Nota
+FROM studenti_reusita R
+INNER JOIN discipline D ON R.Id_Disciplina = D.Id_Disciplina
+INNER JOIN studenti S ON R.Id_Student = S.Id_Student
+WHERE Tip_Evaluare = @TEST AND Disciplina = @DISC AND Nota = IIF (Nota <> 6 AND Nota <> 8, Nota, NULL)
