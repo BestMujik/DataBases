@@ -39,9 +39,11 @@
 ### Practical Assignments :
 1. 1st Query : 
 
-![](images/.PNG)
+![](images/Capture1.PNG)
 
 
 ## Conclusions : 
 
-   There are numerous ways of selecting data from database. Even if the tables do not provide the neccesary information we can obtain through different combinations aka joins between tables. There are also functions which can be perfomed on data e.g. counting, average etc. 
+   There are many cases when we need to store values localy and use them after. For this we use variables. For decision making and repeating the same task multiple times we have alternative and repetitive structures. 
+   
+   Some times may appear exceptions and it is a good practice to use exception handlers. Also for debuging or other purpose Transact-SQL offers us a statement to raise an exception.
