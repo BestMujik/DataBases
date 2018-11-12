@@ -4,68 +4,37 @@
 ### Author : *Drumea Vasile*
 -----
 ## Objectives :
-1. Get familiar with Transact-SQL and its usage;
+1. Get familiar with procedural Transact-SQL and its usage;
+2. Sudy the conditional, repetitive and error handling instructions; 
 
 ## Course of the work :
 ### Quiz :
 
-1. Some of the facilities that Transact-SQL Query Editor offers us are :
+1. Types of blocks in Transact-SQL :
 
-    * Visualization of the data in form of grid or text, using SQL commands;
-    * Analizing the plan of execution of the query;
-    * Online help of Transact-SQL;
+    * Anonim blocks - defined in an app and with no name;
     
-2. SQL instructions are divided in 4 groupes : 
+    * Procedures - blocks with name, parameters and no return value;
+    
+    * Functions - blocks with name, parameters and return value;
+    
+2. A local variable is declared with the keyword DECLARE in the following way : 
 
-    * DDL (Data Definition Language) - This instructions are used for creation, insertion or modification purposes;
-    
-    * DML (Data Manipulation Language) - These are used for manipulation of the data i.e. inserting, modifying rows of data;
-    
-    * DCL (Data Control Language) - Used for creating roles, permissions also for the administration to the database;
-    
-    * TCL (Transactional Control Language) - Used for the management of the transactions from database;
+    DECLARE @name data_type
+   
+   Then a value can be set with SET keyword : 
+      
+    SET @name = value
 
-3. The operators used in Transact-SQL expressions are : 
+3. WHILE loop expression gives us a repetitive structure which executes while a boolean expression is satisfied. We can use different expressions to exit or manipulate the repetitions like BREAK, CONTINUE etc.
 
-    * Arithmetic operators (+, -, *, /, %);
-    
-    * Char operator (+ i.e. concatenation);
-    
-    * Comparison operators (=, <>, >=, <=, <, >, !=, !>, !<);
-    
-    * Logical operators (AND, OR, ANY, SOME, NOT, LIKE, IN, EXISTS, BETWEEN, ALL);
-    
-    * Bitwise operators (&, |, ~, ^);
-    
-    * LIKE
+4. CASE expression permits us to execute different blocks depending on the result of a condition. We use WHEN to specify the different results.
 
-4. Syntax of SELECT instruction : 
+5. IF..ELSE structure enables us to first verify a condition and perform the attached block and otherwise if the condition is not acomplished we can specify another block to execute.
 
-   SELECT [ALL|DISTINCT] <Columns> 
-      FROM <Tables>
-      [WHERE <condition>] [Other clauses]; 
+6. An exception is a problem/error which does not permit our program to run. These are treated using error handlers which give us the possibility to catch and to visualize an exception.
 
-5. Functions of Transact-SQL :
-
-    * Single row (UPPER, LOWER, SUBSTRING, LEN, REPLACE, CONCAT);
-    
-    * Aggregate (SUM, AVG, MAX, MIN, COUNT);
-
-6. Types of join queries : 
-
-    * INNER JOIN;
-    
-    * OUTER JOIN;
-    
-    * LEFT JOIN; 
-    
-    * RIGHT JOIN; 
-
-7. Related queries are queries which appear inside another querry, usually in the WHERE clause; 
-
-8. INTERSECT and EXCEPT are 2 examples of set operations. They corespond with Intersections and Difference operations from set theory;  
-
-9. The TOP clause is used to limit the number of lines returned by a instruction. Also in tandem with ORDER BY to the TOP clause we can use WITH TIES to get all the ties;
+7. RAISERROR is used to generate an error message by the user whenever is needed.
 
 ### Practical Assignments :
 1. 1st Query : 
