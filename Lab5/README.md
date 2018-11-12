@@ -37,9 +37,21 @@
 7. RAISERROR is used to generate an error message by the user whenever is needed.
 
 ### Practical Assignments :
-1. 1st Query : 
+1. 
 
 ![](images/Capture1.PNG)
+
+2. 
+
+![](images/Capture2.PNG)
+
+3. 
+
+![](images/Capture4.PNG)
+
+4. 
+
+![](images/Capture3.PNG)
 
 
 ## Conclusions : 
