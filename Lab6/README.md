@@ -115,6 +115,16 @@
 							      ORDER BY COUNT(Id_Disciplina) DESC, Id_Profesor);
    ```
 
+4. 
+   ```
+   UPDATE dbo.studenti_reusita
+	SET Nota = Nota + 1 WHERE Nota != 10 AND Id_Student IN (SELECT Sef_grupa FROM dbo.grupe);
+   ```
+
+5. See queries/ex5.sql
+
+
+
 ![](images/Capture1.PNG)
 
 
