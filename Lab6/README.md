@@ -77,12 +77,52 @@
 
 ### Practical Assignments :
 1. 
+   ```
+   UPDATE dbo.profesori 
+	SET Adresa_Postala_Profesor = 'mun.Chisinau'
+	WHERE Adresa_Postala_Profesor IS NULL;
+   ```
 
-![](images/Capture1.PNG)
+2. 
+   ```
+   ALTER TABLE dbo.grupe
+	   ALTER COLUMN Cod_Grupa CHAR(6) NOT NULL;
 
+   ALTER TABLE dbo.grupe
+	   ADD CONSTRAINT UNQ_Cod_Grupa UNIQUE(Cod_Grupa);
 
-## Conclusions : 
-
-   There are many cases when we need to store values localy and use them after. For this we use variables. For decision making and repeating the same task multiple times we have alternative and repetitive structures. 
+   ALTER TABLE dbo.grupe
+	   ADD CONSTRAINT PK_Id_Grupa PRIMARY KEY(Id_Grupa);
+   ```
    
-   Some times may appear exceptions and it is a good practice to use exception handlers. Also for debuging or other purpose Transact-SQL offers us a statement to raise an exception.
+3. Add columns : 
+   ```
+   ALTER TABLE dbo.grupe ADD Sef_grupa INT, Prof_Indrumator INT;
+   ```
+   
+   Update new columns : 
+   ```
+   UPDATE dbo.grupe
+	SET Sef_grupa = ( SELECT TOP 1 Id_Student 
+					      FROM dbo.studenti_reusita SR
+					      WHERE dbo.grupe.Id_Grupa = SR.Id_Grupa
+					      GROUP BY Id_Student
+					      ORDER BY AVG(CONVERT(FLOAT, Nota)) DESC),
+		 Prof_Indrumator = ( SELECT TOP 1 Id_Profesor
+							      FROM dbo.studenti_reusita SR
+							      WHERE dbo.grupe.Id_Grupa = SR.Id_Grupa
+							      GROUP BY Id_Profesor
+							      ORDER BY COUNT(Id_Disciplina) DESC, Id_Profesor);
+   ```
+
+4. 
+   ```
+   UPDATE dbo.studenti_reusita
+	SET Nota = Nota + 1 WHERE Nota != 10 AND Id_Student IN (SELECT Sef_grupa FROM dbo.grupe);
+   ```
+
+5. See queries/ex5.sql
+
+6. See queries/ex6.sql
+
+7. See queries/ex7.sql
