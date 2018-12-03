@@ -10,7 +10,41 @@
 ## Course of the work :
 ### Quiz :
 
-1. Types of ...
+1. Basic syntax of CREATE TABLE : 
+
+   CREATE TABLE name_of_table (  
+      column1 data_type1 [DEFAULT expression1] [constraints_column1],  
+      column2 data_type2 [DEFAULT expression2] [constraints_column2],  
+      ...  
+      [constraints_table] ); 
+      
+ 2. Basic syntax of ALTER TABLE : 
+ 
+   ALTER TABLE name_of_table ACTION description, where ACTION is ADD, ALTER or DROP and description is a command associated to the ACTION
+   
+ 3. Basic syntax of INSERT : 
+ 
+   INSERT [INTO] name_of_table (columnl , column2 ... )  
+      VALUES (expressionl, expression2 ... );
+      
+ 4. Basic syntax of DELETE : 
+ 
+   DELETE [FROM] name_of_table  
+   WHERE criteria;
+ 
+ 5. Basic syntax of UPDATE : 
+ 
+   UPDATE name_of_table  
+      SET columnl = expressionl ,  
+          column2 = expression2 ,  
+          ...   
+   WHERE criteria;  
+   
+ 6. DELETE instruction is safer, but slower than TRUNCATE, because second deletes the table and recreates it. In case of DELETE the deleted lines can be restored.
+ 
+ 7. Types of indexes in MS SQL Server 2017;
+ 
+ 8. CREATE INDEX
 
 ### Practical Assignments :
 1. 
