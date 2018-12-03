@@ -19,25 +19,25 @@
       [constraints_table] );
    ```
       
- 2. Basic syntax of ALTER TABLE : 
+2. Basic syntax of ALTER TABLE : 
    ```
    ALTER TABLE name_of_table ACTION description
    ```
    , where ACTION is ADD, ALTER or DROP and description is a command associated to the ACTION
    
- 3. Basic syntax of INSERT : 
+3. Basic syntax of INSERT : 
    ```
    INSERT [INTO] name_of_table (columnl , column2 ... )  
       VALUES (expressionl, expression2 ... );
    ```
    
- 4. Basic syntax of DELETE : 
+4. Basic syntax of DELETE : 
    ```
    DELETE [FROM] name_of_table  
    WHERE criteria;
    ```
  
- 5. Basic syntax of UPDATE : 
+5. Basic syntax of UPDATE : 
    ```
    UPDATE name_of_table  
       SET columnl = expressionl ,  
@@ -46,11 +46,34 @@
    WHERE criteria;  
    ```
    
- 6. DELETE instruction is safer, but slower than TRUNCATE, because second deletes the table and recreates it. In case of DELETE the deleted lines can be restored.
+6. DELETE instruction is safer, but slower than TRUNCATE, because second deletes the table and recreates it. In case of DELETE the deleted lines can be restored.
  
- 7. Types of indexes in MS SQL Server 2017;
+7. Types of indexes in SQL Server 2017 :
  
- 8. CREATE INDEX
+   * Clustered;
+   * Non-Clustered;
+   * Covering;
+   * Unique;
+   * Indexed views;
+   * Spatial;
+   * Filtered;
+   * Full-text;
+   * Primary/Secondary XML;
+   * Columnstore;
+ 
+8. CREATE INDEX Creates a relational index on a table or view. Also called a rowstore index because it is either a clustered or nonclustered B-tree index. Syntax : 
+   ```
+   CREATE [ UNIQUE ] [ CLUSTERED | NONCLUSTERED ] INDEX index_name   
+    ON <object> ( column [ ASC | DESC ] [ ,...n ] )   
+    [ INCLUDE ( column_name [ ,...n ] ) ]  
+    [ WHERE <filter_predicate> ]  
+    [ WITH ( <relational_index_option> [ ,...n ] ) ]  
+    [ ON { partition_scheme_name ( column_name )   
+         | filegroup_name   
+         | default   
+         }  
+    ]  
+   ```
 
 ### Practical Assignments :
 1. 
