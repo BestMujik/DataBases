@@ -123,13 +123,6 @@
 
 5. See queries/ex5.sql
 
+6. See queries/ex6.sql
 
-
-![](images/Capture1.PNG)
-
-
-## Conclusions : 
-
-   There are many cases when we need to store values localy and use them after. For this we use variables. For decision making and repeating the same task multiple times we have alternative and repetitive structures. 
-   
-   Some times may appear exceptions and it is a good practice to use exception handlers. Also for debuging or other purpose Transact-SQL offers us a statement to raise an exception.
+7. See queries/ex7.sql
