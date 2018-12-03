@@ -77,6 +77,43 @@
 
 ### Practical Assignments :
 1. 
+   ```
+   UPDATE dbo.profesori 
+	SET Adresa_Postala_Profesor = 'mun.Chisinau'
+	WHERE Adresa_Postala_Profesor IS NULL;
+   ```
+
+2. 
+   ```
+   ALTER TABLE dbo.grupe
+	   ALTER COLUMN Cod_Grupa CHAR(6) NOT NULL;
+
+   ALTER TABLE dbo.grupe
+	   ADD CONSTRAINT UNQ_Cod_Grupa UNIQUE(Cod_Grupa);
+
+   ALTER TABLE dbo.grupe
+	   ADD CONSTRAINT PK_Id_Grupa PRIMARY KEY(Id_Grupa);
+   ```
+   
+3. Add columns : 
+   ```
+   ALTER TABLE dbo.grupe ADD Sef_grupa INT, Prof_Indrumator INT;
+   ```
+   
+   Update new columns : 
+   ```
+   UPDATE dbo.grupe
+	SET Sef_grupa = ( SELECT TOP 1 Id_Student 
+					      FROM dbo.studenti_reusita SR
+					      WHERE dbo.grupe.Id_Grupa = SR.Id_Grupa
+					      GROUP BY Id_Student
+					      ORDER BY AVG(CONVERT(FLOAT, Nota)) DESC),
+		 Prof_Indrumator = ( SELECT TOP 1 Id_Profesor
+							      FROM dbo.studenti_reusita SR
+							      WHERE dbo.grupe.Id_Grupa = SR.Id_Grupa
+							      GROUP BY Id_Profesor
+							      ORDER BY COUNT(Id_Disciplina) DESC, Id_Profesor);
+   ```
 
 ![](images/Capture1.PNG)
 
