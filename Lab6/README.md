@@ -126,3 +126,9 @@
 6. See queries/ex6.sql
 
 7. See queries/ex7.sql
+
+### Conclusions
+
+In T-SQL we have special instructions for creating, updating, deleting and modifying the tables. 
+
+Indexes are structures in form of Balanced Binary Trees which make the access to table records easier and more efficient. Depending on what we want to do and how we want to access the table there are different types of indexes.
