@@ -72,6 +72,8 @@ ALTER SCHEMA studenti TRANSFER dbo.studenti
 ALTER SCHEMA studenti TRANSFER dbo.studenti_reusita
 ```
 
+![](images/Capture5.PNG)
+
 7. Modify 3 querries from the 4th lab with renamed table names.
 
 ```
