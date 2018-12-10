@@ -41,7 +41,15 @@ CREATE VIEW [<nume_schema>.]<nume_viziune> [ (<coloana> [ , ... n] ) ]
 ### Practical Assignments :
 1. Create two visions based on the questions formulated in the two exercises indicated in the chapter4. The first view is built in the Query Editor, and the second, using ViewDesigner.
 
+For the script see queries/query1.sql
+
 ![](images/Capture1.PNG)
+
+With View Designer : 
+
+![](images/Capture3.PNG)
+
+![](images/Capture2.PNG)
 
 2. Write an example of instructions INSERT, UPDATE, DELETE on created views. Add the relevant comments on the results of their execution instructions.
 
