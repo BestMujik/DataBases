@@ -41,7 +41,7 @@ CREATE VIEW [<nume_schema>.]<nume_viziune> [ (<coloana> [ , ... n] ) ]
 ### Practical Assignments :
 1. Create two visions based on the questions formulated in the two exercises indicated in the chapter4. The first view is built in the Query Editor, and the second, using ViewDesigner.
 
-For the script see queries/query1.sql
+[For the script see query1](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query1.sql)
 
 ![](images/Capture1.PNG)
 
@@ -55,7 +55,7 @@ With View Designer :
 
 Comment: Insert, Update, Delete were done on rows of created views. I've inserted 3 rows with last column with "FAF", which is student's address. With Update we update one's student's address and with Delete from a student i've deleted one.
 
-For the script see queries/query2.sql
+[For the script see query2](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query2.sql)
 
 ![](images/Capture4.PNG)
 
@@ -63,22 +63,26 @@ For the script see queries/query2.sql
 
 Comments: "WITH SCHEMABINDING " is used to prevent the error of a view table in case initial tables are modified and WITH CHECK OPTION we prevent DML operations related to WHERE clause state.
 
-For the script see queries/query3.sql
+[For the script see query3](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query3.sql)
 
 4. Write the test instructions for newly defined properties.
 
-For the script see queries/query4.sql
+[For the script see query4](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query4.sql)
 
 ![](images/Capture5.PNG)
 
 5. Write 2 exercises from Chapter 4, in the same way, that the nested queries to be rendered in the form of CTE expressions.
 
-For the script see queries/query5.sql
+[For the script see query5](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query5.sql)
 
 The results are the same as the previous ones;
 
 6. It is considered an oriented graph, as shown in the figure below, and you may want to go through the path from node id = 3 at the node where id = 0. Make the representation of the graph in the form of expression-recursive table. Note the instruction after UNION ALL of the recursive member, as well as the part up to UNION ALL represented by the anchor member.
 
-For the script see queries/query5.sql
+[For the script see quer6](https://github.com/Wazea/DataBases/tree/master/Lab8/queries/query6.sql)
 
 ![](images/Capture6.PNG)
+
+## Conclusions : 
+
+HTTP 404
