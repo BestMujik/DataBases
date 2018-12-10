@@ -75,11 +75,10 @@ For the script see queries/query4.sql
 
 For the script see queries/query5.sql
 
+The results are the same as the previous ones;
+
 6. It is considered an oriented graph, as shown in the figure below, and you may want to go through the path from node id = 3 at the node where id = 0. Make the representation of the graph in the form of expression-recursive table. Note the instruction after UNION ALL of the recursive member, as well as the part up to UNION ALL represented by the anchor member.
 
+For the script see queries/query5.sql
 
-## Conclusions : 
-
-   There are many cases when we need to store values localy and use them after. For this we use variables. For decision making and repeating the same task multiple times we have alternative and repetitive structures. 
-   
-   Some times may appear exceptions and it is a good practice to use exception handlers. Also for debuging or other purpose Transact-SQL offers us a statement to raise an exception.
+![](images/Capture6.PNG)
