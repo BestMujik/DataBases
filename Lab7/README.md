@@ -50,9 +50,9 @@ CREATE SYNONYM [ name_schema_1. ] name_synonym FOR < object >
 
 2. Add the referential constraints with tables studenti and profesori for columns Sef_grupa and Prof_indrumator from table grupe;
 
-3. Add the table orarul to the diagram;
-
 ![](images/Capture2.PNG)
+
+3. Add the table orarul to the diagram;
 
 4. Add secondary keys to the table orarul;
 
