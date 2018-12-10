@@ -73,6 +73,8 @@ For the script see queries/query4.sql
 
 5. Write 2 exercises from Chapter 4, in the same way, that the nested queries to be rendered in the form of CTE expressions.
 
+For the script see queries/query5.sql
+
 6. It is considered an oriented graph, as shown in the figure below, and you may want to go through the path from node id = 3 at the node where id = 0. Make the representation of the graph in the form of expression-recursive table. Note the instruction after UNION ALL of the recursive member, as well as the part up to UNION ALL represented by the anchor member.
 
 
