@@ -43,6 +43,20 @@ CREATE VIEW [<nume_schema>.]<nume_viziune> [ (<coloana> [ , ... n] ) ]
 
 ![](images/Capture1.PNG)
 
+2. Write an example of instructions INSERT, UPDATE, DELETE on created views. Add the relevant comments on the results of their execution instructions.
+
+Comments: Insert, Update, Delete were done on rows of created views. Were inserted 3 rows with last column with "Undeva", which is student's address. With Update, one student got an address and with Delete, from one of left students with "Undeva", we deleted one with First Name "Botezatu"
+
+3. Write the SQL statements that would change the views created (in exercise 1) in such a way that it is not possible to modify or delete the tables on which they are defined and the views not accept DML operations if the WHERE clause is not satisfied.
+
+Comments: "WITH SCHEMABINDING " is used to prevent the error of a view table in case initial tables are modified and WITH CHECK OPTION we prevent DML operations related to WHERE clause state.
+
+4. Write the test instructions for newly defined properties.
+
+5. Write 2 exercises from Chapter 4, in the same way, that the nested queries to be rendered in the form of CTE expressions.
+
+6. It is considered an oriented graph, as shown in the figure below, and you may want to go through the path from node id = 3 at the node where id = 0. Make the representation of the graph in the form of expression-recursive table. Note the instruction after UNION ALL of the recursive member, as well as the part up to UNION ALL represented by the anchor member.
+
 
 ## Conclusions : 
 
