@@ -53,7 +53,11 @@ With View Designer :
 
 2. Write an example of instructions INSERT, UPDATE, DELETE on created views. Add the relevant comments on the results of their execution instructions.
 
-Comments: Insert, Update, Delete were done on rows of created views. Were inserted 3 rows with last column with "Undeva", which is student's address. With Update, one student got an address and with Delete, from one of left students with "Undeva", we deleted one with First Name "Botezatu"
+Comment: Insert, Update, Delete were done on rows of created views. I've inserted 3 rows with last column with "FAF", which is student's address. With Update we update one's student's address and with Delete from a student i've deleted one.
+
+For the script see queries/query2.sql
+
+![](images/Capture4.PNG)
 
 3. Write the SQL statements that would change the views created (in exercise 1) in such a way that it is not possible to modify or delete the tables on which they are defined and the views not accept DML operations if the WHERE clause is not satisfied.
 
