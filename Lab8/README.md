@@ -63,7 +63,13 @@ For the script see queries/query2.sql
 
 Comments: "WITH SCHEMABINDING " is used to prevent the error of a view table in case initial tables are modified and WITH CHECK OPTION we prevent DML operations related to WHERE clause state.
 
+For the script see queries/query3.sql
+
 4. Write the test instructions for newly defined properties.
+
+For the script see queries/query4.sql
+
+![](images/Capture5.PNG)
 
 5. Write 2 exercises from Chapter 4, in the same way, that the nested queries to be rendered in the form of CTE expressions.
 
