@@ -62,9 +62,62 @@ CREATE SYNONYM [ name_schema_1. ] name_synonym FOR < object >
 
 ![](images/Capture4.PNG)
 
+6. Create 3 new schemas in the universitatea database: cadre_didactice, plan_studii and studenti. Transfer the table profesori to the schema cadre_didactice, tables orarul, discipline to the schema plan_studii, and the tables studenti, studenti_reusita to the schema studenti.
+
+```
+ALTER SCHEMA cadre_didactice TRANSFER dbo.profesori
+ALTER SCHEMA plan_studii TRANSFER dbo.orarul
+ALTER SCHEMA plan_studii TRANSFER dbo.discipline
+ALTER SCHEMA studenti TRANSFER dbo.studenti
+ALTER SCHEMA studenti TRANSFER dbo.studenti_reusita
+```
+
+7. Modify 3 querries from the 4th lab with renamed table names.
+
+```
+SELECT * 
+FROM studenti.studenti
+WHERE Nume_Student LIKE '%u'
+
+SELECT Disciplina, AVG(Nota) AS AvgMark
+FROM plan_studii.discipline AS C, studenti.studenti_reusita AS D
+WHERE C.Id_Disciplina = D.Id_Disciplina and
+Tip_Evaluare = 'Examen'
+GROUP BY Disciplina
+HAVING AVG(Nota) >7.0
+ORDER BY Disciplina DESC
+
+SELECT Cod_Grupa, COUNT(DISTINCT Id_Student) AS Studenti_in_Grupa
+FROM grupe AS C
+INNER JOIN studenti.studenti_reusita AS D ON C.Id_Grupa = D.Id_Grupa
+GROUP BY Cod_Grupa HAVING COUNT(DISTINCT Id_Student) > 24
+```
+
+8. Create synonyms to simplify the previous querries.
+
+```
+CREATE SYNONYM DISC FOR plan_studii.discipline
+CREATE SYNONYM STUD FOR studenti.studenti
+CREATE SYNONYM STUD_R FOR studenti.studenti_reusita
+
+SELECT Disciplina
+FROM DISC
+WHERE LEN(Disciplina) > 20
+
+SELECT Nume_Student, Prenume_Student, COUNT(Nota) AS Note
+FROM STUD s FULL JOIN STUD_R r ON s.Id_Student = r.Id_Student
+GROUP BY Nume_Student, Prenume_Student
+ORDER BY Nume_Student
+
+SELECT Disciplina, AVG(Nota) AS Media
+FROM DISC d INNER JOIN STUD_R r ON d.Id_Disciplina = r.Id_Disciplina
+GROUP BY Disciplina HAVING AVG(Nota) > 7.0
+ORDER BY Disciplina
+```
+
 
 ## Conclusions : 
 
-   There are many cases when we need to store values localy and use them after. For this we use variables. For decision making and repeating the same task multiple times we have alternative and repetitive structures. 
+   There are utilities in SQL Server that help us have an improved and more precise controler over the structure of the data like diagrams. 
    
-   Some times may appear exceptions and it is a good practice to use exception handlers. Also for debuging or other purpose Transact-SQL offers us a statement to raise an exception.
+   Schemas are use to define the blue-print of the table.
