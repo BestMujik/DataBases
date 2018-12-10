@@ -52,6 +52,8 @@ CREATE SYNONYM [ name_schema_1. ] name_synonym FOR < object >
 
 3. Add the table orarul to the diagram;
 
+![](images/Capture2.PNG)
+
 4. Add secondary keys to the table orarul;
 
 ![](images/Capture3.PNG)
